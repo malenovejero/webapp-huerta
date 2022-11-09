@@ -1,0 +1,1268 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: block;
+  display: flex;
+  flex-direction: column 
+}
+
+header,
+footer {
+  flex: none;
+}
+
+main {
+    overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+   flex: auto;
+    background-color: white;
+    height: inherit;
+}
+
+
+footer {
+  background-color: gainsboro;
+  font-size: .8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: gainsboro;
+}
+
+
+
+/**********************  HEADER *********************/
+
+header {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(83, 188, 87, 1);
+    z-index: 9999;
+    top: 0em;
+ 
+}
+
+.contenedor {
+    max-width: 75em;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#logo {
+  display: block;
+  width: 10em;
+}
+
+    
+       /************* menu *************/
+
+header nav {
+    color: white;
+}
+
+header nav a {
+  color: rgba(255,255,255,1);
+  padding: .6em 1em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font: 2.59em sans-serif;
+}
+
+header nav a:hover {
+  background-color: rgba(180, 231, 182, 1);
+  color: white;
+  width: 100%;
+}
+
+
+/* boton que llama al menu */
+#llamamenu {
+  background-color: rgba(83, 188, 87, 1);
+  color: white;
+  cursor: pointer;
+  width: 2.5em;
+  height: 2.5em;  
+  display: flex;
+  position: relative;
+  z-index: 9999;
+  margin-right: 0.4em;  
+}
+
+#llamamenu i {
+    padding: 0;
+    margin: auto;
+}
+
+/*Configuracion de MATERIAL ICONS*/
+.material-icons {
+  font-family: "Material Icons";
+  color: white;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3em; /* 7em Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding-right: .25em;
+ 
+}
+
+/* el menú propiamente dicho */
+header nav ul {
+  background-color: rgba(132, 201, 135, 0.87);
+  position: absolute;
+  left: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  height: 100vh;
+  width: 90%;
+  z-index: 900;
+  padding-top: 5em;
+  transition: all 0.6s ease;
+  opacity: 90%;
+  
+}
+
+.visible {
+  /* el menú se muestra
+    corriéndose a la izquierda */
+  left: 12%;
+  top: 0%;
+  bottom: 0%;
+  transition: all 0.25s ease;
+  padding-top: 0em;
+  font: 0.5em sans-serif;
+  z-index: 9000;
+}
+ 
+
+header nav ul li:first-child {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font: 2.3em sans-serif;
+    color: rgba(255,255,255, .70)
+}
+
+
+
+{    
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+/******* TEXTOS y BOTONES ***********/
+
+/* títulos en globo naranja */
+
+ h1 {
+  margin-top: 1em;
+  margin-bottom: 1.4em;
+  background-color: rgba(255, 134, 44, 1);
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 1em;
+  padding-right: 0.2em;
+  width: 10em;
+  border-top-right-radius: 20em;
+  border-bottom-right-radius: 20em;
+  font-size: 1.5em;
+  letter-spacing: .06em;
+  word-spacing: .2em;
+  color: white;
+  }
+
+/* títulos en bold */
+h2 {
+  font-size: 1.6em;
+  font-weight: 400;
+   word-spacing: .2em;
+  margin: .9em 1.5em .5em 1.5em;
+}
+
+/* título en naranja de bolson del mes */
+h3 {
+  font-size: 1.5em;
+  color: rgba(255, 134, 44, 1);
+  font-weight: 100;
+  word-spacing: .2em;
+  margin-top: 1.5;
+  margin-left: .7em;
+}
+
+/* párrafos */
+p {
+  font-size: 1em;
+  font-weight: 200;
+  word-spacing: .2em;
+  margin: .5em  1.5em 1em 1.5em; 
+}
+
+p#enviar{
+    margin: 2.5em 1.5em 2.5em 1.5em;
+}
+
+/* botón postulate/enviar */
+.postulate {
+  margin: auto;
+  margin-bottom: 1em;
+  margin-top: 1.5em;
+  background-color: rgba(255, 186, 49, 1);
+  padding-top: 0.3em;
+  padding-bottom: 0.2em;
+  padding-left: 0.2;
+  width: 8em;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 1.2em;
+  letter-spacing: .06em;
+  word-spacing: .2em;
+}
+
+
+.postulate a {
+  color: white;
+}
+
+a:hover {
+  color: rgba(255, 134, 44, 1);
+  font-weight: 600;
+}
+
+a {
+  color: rgba(255, 134, 44, 1);
+  text-decoration: none;
+}
+
+
+
+/********************* INICIO  ***************************/
+
+main.index{
+     overflow: hidden;
+}
+
+/* slider */
+
+.contenedorslider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    padding-bottom: 0.4em;    
+}
+
+
+ul.slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: inherit;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: opacity .5s;
+}
+
+ul.slider li img {
+    width: 100%;
+    max-width: 100%;
+    height: 112%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: 0;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+
+/*  botones que mueven el slider */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.4em;
+    margin-top: 0.4em;
+    z-index: 999;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+    margin: 0.2em;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(255, 186, 49, 1);
+    padding: 0.4em;
+    width: auto;
+    border-radius: 2em;
+}
+
+.menu li a:active {
+    background-color: rgba(255, 134, 44, 1);
+}
+
+
+/* botones sobre las imágenes */
+
+.botonindex a {
+  color: white;
+  text-decoration: none;
+}
+
+.botonindex {
+  margin-top: 1em;
+  margin-bottom: 1.7em;
+  background-color: rgba(255, 134, 44, 1);
+  top: 1em;
+  margin-left: 0em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  width: 13em;
+  word-break:keep-all;
+  border-top-right-radius: 50em;
+  border-bottom-right-radius: 50em;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 100;
+  letter-spacing: .06em;
+  color: white;
+  position: absolute;
+  z-index: 800; 
+}
+
+.botonindex span {
+    font-weight: 600;
+    padding-left: em;   
+}
+
+.botonindex:hover {
+  color: white;
+  font-weight: 800;
+}
+
+#postulate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 186, 49, 1);
+  padding-top: 0.3em;
+  padding-bottom: 0.2em;
+  padding-left: 0.2;
+  width: 8em;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 1.1em;
+  letter-spacing: .06em;
+  word-spacing: .2em;
+  position: absolute;
+  z-index: 800;
+  bottom: 1%; 
+  left: 30%;
+}
+
+#postulate a {
+  color: white;
+    
+}
+
+#postulate a:hover {
+  color: rgba(255, 134, 44, 1);
+  font-weight: 600;
+}
+
+
+
+/****************  SOBRE NOSOTRXS ******************/
+
+.nosotrxs {
+  background-color: rgba(181, 231, 182, 1);
+}
+
+.bold2 {
+  font-weight: 400;
+}
+
+.info {
+  font-weight: 300;
+  font-size: 1.2em;
+  margin: 0em 1em 1em 1em;
+}
+
+.iconos {
+  margin: 1em 1.2em 0em 1.2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2em;
+}
+
+.iconos img {
+  width: 100%;
+}
+
+.iconos h5 {
+  font-size: .9em;
+  text-align: center;
+}
+
+.iconos div {
+  margin-bottom: 1.7em;
+}
+
+
+
+
+/************ BOLSÓN DEL MES *********/
+
+#fotobolson {
+  width: 100%;
+  padding: 1em;
+}
+
+p a {
+  color: rgba(255, 134, 44, 1);
+}
+
+details {
+  padding: 0em;
+  font-weight: 200;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+  text-decoration: none;
+}
+
+details[open] {
+  color: rgba(255, 134, 44, 1);
+}
+
+details[open] span {
+  color: rgba(255, 134, 44, 1);
+  font-weight: 400;
+}
+
+details li .bold {
+  font-weight: 400;
+}
+
+details li {
+  list-style: none;
+  font-weight: 200;
+  margin-left: 2em;
+}
+
+summary:-webkit-details-marker {
+  color: rgba(255, 134, 44, 1);
+}
+
+
+
+
+/**************  CONTACTANOS  ***********/
+
+.mapa1 {
+  padding-top: 3em;
+  position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+}
+
+
+.contactanos {
+  margin: auto;
+}
+
+
+
+
+/*******************  POSTULATE:  ****************/
+
+.llenado p {
+  font-size: 1.25em;
+}
+
+.botonenviar {
+  margin: auto;
+  margin-bottom: 6.25em;
+  margin-top: 6.25em;
+  background-color: rgba(255, 186, 49, 1);
+  padding-top: 0em;
+  width: 25em;
+  border-radius: 3.125em;
+  text-align: center;
+}
+
+.botonenviar h3 {
+  color: white;
+  font-size: 3.25em;
+}
+
+
+
+
+
+
+/********************  RECETA DEL MES   ***********/
+
+.videoresponsive {
+  position: relative;
+  margin: 1em;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.videoresponsive iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0;
+  border-radius: 1em;
+}
+
+.ingredientes {
+  margin: 1em;
+  background-color: rgba(255, 134, 44, 1);
+  padding: 1em 2em 2em 2em;
+  width: auto;
+  border-radius: 1rem;
+}
+
+.listaingredientes {
+  font-size: 1em;
+  font-weight: 100;
+  color: white;
+  margin-top: 1em;
+}
+
+.porc #porciones1 {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.pasos {
+  margin: 2em;
+}
+
+.pasos h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: rgba(83, 188, 87, 1);
+}
+
+#ima {
+  width: 1.5rem;
+}
+
+.listapasos a {
+  color: black;
+}
+
+
+
+
+
+/********************  NUESTRAS RECETAS  *******************/
+
+
+.filtrocontenedor {
+  width: 100%;
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+  align-items: center;
+  display: none;
+  box-shadow: 2px 2px 5px rgb(201, 201, 201);
+}
+
+.visiblefiltro {
+  position: absolute;
+  display: inherit;
+}
+
+#llamafiltro {
+  font-size: 1rem;
+  color: rgba(83, 188, 87, 1);
+  margin-bottom: 0.5em;
+  margin-top: 0.1em;
+  margin-left: 1rem;
+  width: 8em;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.lax {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0em;
+}
+
+.x {
+  font-size: 1.5rem;
+  color: rgba(255, 134, 44, 1);
+  background-color: white;
+  margin: 0%;
+  padding: 0.1rem;
+}
+.filtrarpor {
+  font-size: 1rem;
+  color: rgba(83, 188, 87, 1);
+}
+
+.subfiltros {
+  font-size: 1rem;
+  color: rgba(83, 188, 87, 1);
+}
+.estacion li button {
+  width: 8em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  border: solid 0.1em;
+  border-color: rgba(255, 134, 44, 1);
+  background-color: white;
+  color: rgba(255, 134, 44, 1);
+  padding: 0.5em;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.estacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2em;
+
+  align-items: center;
+  margin: 1em 1.2em 0em 1.2em;
+  width: auto;
+}
+
+.verfru {
+  font-size: 1rem;
+  color: rgba(255, 134, 44, 1);
+}
+
+.cajaverfru {
+}
+
+.receta1 {
+  width: 92%;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.receta2 {
+  width: 92%;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.receta3 {
+  width: 92%;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.receta4 {
+  width: 92%;
+  padding: 10px;
+  margin-left: 20px;
+}
+.receta5 {
+  width: 92%;
+  padding: 10px;
+  margin-left: 20px;
+}
+.receta6 {
+  width: 92%;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+
+
+
+
+/*******************  FORMULARIO  ****************/
+
+form {
+  padding: 1em;
+  max-width: 95%;
+  margin: auto;
+}
+
+form ul li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: auto;
+  font-size: 1em;
+}
+
+form input {
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+  width: 100%;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 0.8em;
+  resize: horizontal;
+  border-radius: 50px;
+  color: rgba(255, 134, 44, 1);
+  box-shadow: 2px 2px 5px rgb(201, 201, 201);
+  border: none;
+}
+
+legend {
+  font-size: 1.2em;
+  padding-bottom: 1em;
+  padding-top: 2em;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  font-size: 1.5em;
+  box-shadow: none;
+  width: 13px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.caja {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3em;
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
+}
+
+#checkbox {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8em;
+  padding-bottom: 0.5em;
+}
+
+/*************PAGINA GRACIAS****************/
+.gracias1 {
+  height: 25em;
+}
+
+
+
+
+
+/* 
+------------------------------------------------
+                  MEDIAQUERIES
+------------------------------------------------*/
+
+
+/******* MÍNIMO 560px DE ANCHO ********/
+
+@media (min-width: 35em){
+
+       .contenedor #logo {
+        object-fit: cover;
+        width: 10em;
+}
+    
+    .postulate{
+      font-size: 1.1em;   
+    }
+    
+    h1 {
+         margin: 1em 1em 1em 0;
+        letter-spacing: .06em;
+        width: 10em; 
+        font-size: 1.3em;
+    }
+    
+    h2{
+      font-size: 1.24em;  
+    }
+    
+    p{
+        font-size: 1em;
+    }
+    
+    /* index */
+    
+.botonindex {
+  font-size: 1.4em;
+  width: 13em;
+}
+  #postulate {
+  font-size: 1.1em;
+  left: 38%;
+}  
+   
+      /* sobrenosotrxs */
+    
+   .iconos img {
+        width: 60%;
+       margin-left: 2em;
+       padding-left: 1em;
+    }
+    .info {
+        font-size: 1.06em;
+    }
+ 
+     /* fin index */
+}
+
+
+
+/********** MÍNIMO 640px DE ANCHO ********/
+@media (min-width: 40em){
+ 
+       
+     h1 {
+        font-size: 1.5em;     
+    }
+    
+     p {
+        font-size: 1.1em;
+    }
+    
+    h2 {
+        font-size: 1.37em;
+    }
+
+    /* index */
+    .botonindex {
+   background-color: rgba(255, 134, 44, 1);
+  font-size: 1.5em;
+   width: 13em; 
+} 
+  #postulate {
+  font-size: 1.25em;
+  left: 39%;
+}    
+    /* sobrenosotrxs */
+    
+   .iconos img {
+        width: 60%;
+       margin-left: 2em;
+       padding-left: 1em;
+    }
+    
+    .info {
+        font-size: 1.19em;
+    }
+
+    
+}
+/********** MÍNIMO 800px DE ANCHO ********/
+@media (min-width: 50em){
+   
+    
+    
+        
+    #llamamenu {
+        display: none;
+}
+    #palabramenu{
+        display: none;
+}
+
+    /* menu horizontal */
+    header nav ul {
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        top:auto;
+        height: inherit;
+        width: 100%;
+        left: auto;
+        padding-top: 0;
+        margin-top: 0em;
+}
+    
+    header nav ul.visible {
+        left: 0;
+}
+   
+     header nav ul a{
+        color: white;
+        font-size: .8em;
+    }
+    
+    
+      h1 {
+        margin: 1em .2em .3em 0;
+        font-size: 1.7em;
+         padding-right: 2em;
+          padding-left: 2em;
+         width: 15em;
+         }
+    
+    .postulate {
+        font-size: 1.3em;
+        margin: auto;
+        margin-top: 0.4em;
+        margin-bottom: .9em;
+         }
+     
+               /*index */ 
+  .botonindex {
+  background-color: #FFBA31;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-left: 5em;
+  padding-right: 1em;
+  border-radius: 1.25em;
+  font-size: 1.6em;
+  width: 17em;
+  left: -3em;
+     
+}
+  #postulate {
+  font-size: 1.3em;
+  left: 40%;
+      
+      
+                 /* bolson */
+} 
+   .contenedorx {
+       display: flex;
+       flex-wrap: wrap;   
+    }
+    
+    .contenedorx p{
+        padding-left: 1.3em;
+        font-size: 1.1em;
+    }
+    
+    .contenedorbolson {
+        width: 100%;
+        margin-top: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+     h3 { 
+        margin: 1.2em 5em 1em .5em;
+        width: auto;
+        padding-top: .6em;
+    }
+    
+    
+    .bnoviembre {
+        margin:auto;
+        width: 40%;
+    }
+    
+    .bnoviembre h2 {
+        font-size: 1.2em;
+    }
+    
+    .bnoviembre ul {
+        font-size: .9em;
+    }
+    
+    
+    #fotobolson {
+     order: 3;
+     width: 50%;
+     margin: auto;
+           
+}
+  
+      
+    /* sobre nosotrxs */
+    
+  .contenedornos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .seccionnos {
+    margin-left: 1em;
+    width: 25%;
+    box-shadow: inset 0 0 1em #8db590;
+    border: .1em solid #8db590;
+    background-color: #ccffcc;
+    border-bottom-left-radius: 0.9em;
+    border-bottom-right-radius: 0.9em;
+    border-top-right-radius: 0.9em;
+    border-top-left-radius: 0.9em;
+    }
+    
+    .seccionnos p{
+        font-size: .9em;
+    }
+    
+    .seccionnos h2{
+        font-size: 1.3em;
+    }
+    
+    
+    .beneficios {
+       width: 73%;
+       padding: 2em;
+    }
+    
+    .beneficios h2 {
+     text-align: center;   
+    }
+    
+    .beneficios p {
+     text-align: center;   
+    }
+     
+    
+    .iconos {
+  margin: 2em 1.2em 0em 1.2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: .1em;
+  float: right;
+}
+
+.iconos img {
+  width: 70%;
+ 
+}
+
+.iconos h5 {
+ margin: auto;
+  width: 70%;
+}
+
+.iconos div {
+  margin-bottom: 1.7em;
+  width: auto;
+  padding: auto;
+
+}
+    
+    .info{
+        order:4;
+        font-size: 1.1em;
+        margin: auto;
+    }
+    
+    .info a{
+        display: none;
+    }
+   
+    /* contactanos */
+    
+    .contecontact{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .mapa1{
+        margin-bottom: 1em;
+        width: 50%; 
+        height: inherit;
+    }
+    
+    .mapa1 iframe {
+        
+    }
+     
+    
+    .textocontact{
+        width: 40%;
+        margin-top: 10%;
+        height: inherit;
+        
+    }
+    
+  p {
+        margin-top: 2em;
+        margin-left: 2em; 
+       
+    }
+    
+
+
+/********** MÍNIMO 1200px DE ANCHO ********/    
+@media (min-width: 75em){
+    
+    .contenedor{
+        width: 100%;
+        margin: 0 1.5em 0 1.5em;
+    }
+    
+  header nav ul a{
+        font-size: 1em;
+    }
+       
+       .postulate {
+        font-size: 1.4em;
+        z-index: 1;
+        
+    }
+         /*index */
+    
+    
+
+  #postulate {
+  font-size: 1.4em;
+  left: 44%;
+ }   
+    
+    
+    
+       /* bolson del mes */
+
+     .contenedorx p {
+        font-size: 1.25em;
+        margin: 2em 1em 0 1.5em; 
+    }
+    
+     #fotobolson {
+     width: 40%;
+     margin: auto;
+
+} 
+    .bnoviembre {
+        margin: 0 3em 0 3em;
+    }
+     .bnoviembre h2 {
+        font-size: 1.5em;
+    }
+    .bnoviembre ul {
+        font-size: 1em;
+    }
+    
+    
+     /* sobre nosotrxs */
+    
+     .seccionnos {
+    width: 27%;
+    }
+    
+    .seccionnos p{
+        font-size: .97em;
+        
+    }
+    
+    .seccionnos h2{
+        font-size: 1.3em;
+    }
+    
+    .beneficios {
+        width: 70%;
+        margin:auto;
+    }    
+    
+
+.iconos {
+  margin: 1em 1.2em 0em 1.2em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.iconos h5 {
+  font-size: .9em;
+  margin: auto;
+}
+
+.iconos div {
+  margin-bottom: 1.7em;
+}
+
+ p {
+        margin-top: 2em;
+        margin-left: 2em; 
+       
+    }
+    

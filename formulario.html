@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+        <meta charset="utf-8">    
+        <title>Huerta La Esperanza</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+        <link href="./css/estilos.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    </head>
+    
+    <body>
+        <header>
+                <div class= "contenedor"> 
+                <a href="index.html">
+                <img id="logo" src="imagenes/logo.png" alt="logo">
+                </a>
+
+                 
+            <nav id="menu">
+                <button id="llamamenu" title="abre/cierra menu"><i class="material-icons">menu</i></button>
+            
+                  <ul>
+                    <li id="palabramenu">MENÚ</li>
+                           <li>
+                     <li><a href="index.html" title="pag1">Página Principal</a></li>
+                        <li><a href="nuestrasrecetas.html" title="pag2">Nuestras Recetas</a></li>
+                        <li><a href="bolsondelmes.html" title="pag3">Bolsón del Mes</a></li>
+                        <li><a href="sobrenosotrxs.html" title="pag4">Sobre Nosotrxs</a></li>
+                        <li><a href="contactanos.html" title="pag5">Contactanos</a></li>   
+                    </ul> 
+                </nav>
+            </div>
+    </header> 
+         
+        <main>
+          <h1 class="seccion">¡Postulate!</h1>  
+          <p>Si sos parte de un comedor comunitario y estás interesado en poder recibir los bolsones mensuales gratuitos, dejanos tus datos en el siguiente formulario y nos pondremos en contacto.</p>
+            <form>
+           <ul class="paracompletar">
+           <li>
+           <label for="nombre">Nombre del postulante:</label>
+           <input type="text" id="nombre" name="nombre">
+           </li>
+           <li>
+           <label for="comedor">Nombre del comedor o institución:</label>
+           <input type="text" id="comedor" name="comedor">
+           </li>
+           <li>
+           <label for="dirección">Dirección:</label>
+           <input id="dirección" name="dirección">
+           </li>
+           <li>
+           <label for="teléfono">Tu número de teléfono:</label>
+           <input type="text" id="teléfono" name="teléfono">
+           </li>
+           <li>
+           <label for="personas"> ¿Cúantas personas asisten?</label>
+           <input type="text" id="perdonas" name="personas">
+            </li>
+            </ul>
+           <fieldset>
+                <legend>¿Qué comidas sirven?</legend> 
+                <div class="caja">   
+               <ul class="izquierda">
+                   <li>
+                  <label><input type="checkbox" name="desayuno" id="dessayuno" value="desayuno">Desayuno</label>
+                   </li>
+                   <li>
+                   <label><input type="checkbox" name="almuerzo" id="almuerzo" value="Almuerzo">Almuerzo</label>
+                   </li>
+                   </ul>
+                   <ul class="derecha">
+                   <li>
+           <label><input type="checkbox" name="merienda" id="merienda" value="merienda">Merienda</label>
+                   </li>
+                   <li>
+           <label><input type="checkbox" name="cena" id="cena" value="Cena">Cena</label> 
+                   </li>
+               </ul>
+               </div>
+           </fieldset>
+           </form>
+            
+            <div class="postulate"> 
+             <a href="enviar.html">  
+                 Enviar</a>
+            </div>
+        </main>
+   
+        <footer>
+            <p><span class="bold2">produccion@marcospaz.gov.ar </span> Tel. 0220 477-5364. Ruta 40 km50, Marcos Paz, Pcia. de Buenos Aires</p>   
+        </footer>
+
+    <script src="desplegable.js"></script>
+ </body>

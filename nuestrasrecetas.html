@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+        <meta charset="utf-8">    
+        <title>Huerta La Esperanza</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link href="./css/estilos.css" rel="stylesheet">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    </head>
+    
+    <body>
+        <header>
+                <div class= "contenedor"> 
+                <a href="index.html">
+                <img id="logo" src="imagenes/logo.png" alt="logo">
+                </a>
+
+                 
+            <nav id="menu">
+                <button id="llamamenu" title="abre/cierra menu"><i class="material-icons">menu</i></button>
+            
+                  <ul>
+                    <li id="palabramenu">MENÚ</li>
+                           <li>
+                     <li><a href="index.html" title="pag1">Página Principal</a></li>
+                        <li><a href="nuestrasrecetas.html" title="pag2">Nuestras Recetas</a></li>
+                        <li><a href="bolsondelmes.html" title="pag3">Bolsón del Mes</a></li>
+                        <li><a href="sobrenosotrxs.html" title="pag4">Sobre Nosotrxs</a></li>
+                        <li><a href="contactanos.html" title="pag5">Contactanos</a></li>   
+                    </ul> 
+                </nav>
+            </div>
+        </header> 
+       <main>
+
+         <h1 class="seccion">Nuestras Recetas</h1>
+           <p class="conoceparrafo">Conocé nuestras mejores recetas para hacer con tu bolsón agroecólogico mensual. Podés filtrar por:
+           estación del año, ingrendiente o verdura, para poder encontrar con mayor facilidad lo que estás buscando!</p>
+           <button id="llamafiltro" title="abre/cierra filtro"><h2>Filtrar</h2></button>
+
+           <div class="filtrocontenedor"> 
+                    <div class="lax" >
+                        <button id="cierrafiltro" title="cierra filtro"><h2 class="x">X</h2></button>
+                    </div>
+                <h2 class="filtrarpor">FILTRAR POR:</h2>
+                <h3 class="subfiltros">Estación del Año</h3>  
+                <ul class="estacion">
+                <li><button type="button">Verano</button></li>
+                <li><button type="button">Otoño</button></li>
+                <li><button type="button">Invierno</button></li>
+                <li><button type="button">Primavera</button></li>
+                </ul>     
+                <h3 class="subfiltros">Ingredientes</h3>
+                
+                <div class="cajaverfru">
+                    <h3 class="verfru">Verduras</h3>    
+                    <ul>  
+                   <li>
+                       <select name="verduras">
+                           <option value="1">Acelga</option> 
+                           <option value="2">Ajo</option> 
+                           <option value="3">Acaucil</option>
+                           <option value="4">Batata</option> 
+                           <option value="5">Berenjena</option> 
+                           <option value="6">Brócoli</option>
+                           <option value="7">Calabaza</option> 
+                           <option value="8">Cebolla</option> 
+                           <option value="9">Choclo</option>
+                           <option value="10">Coliflor</option> 
+                           <option value="11">Espinaca</option> 
+                           <option value="12">Espárrago</option>
+                           <option value="13">Lechuga</option> 
+                           <option value="14">Papa</option> 
+                           <option value="15">Pepino</option>
+                           <option value="16">Puerro</option>
+                           <option value="17">Remolacha</option> 
+                           <option value="18">Repollo</option> 
+                           <option value="19">Tomate</option>
+                           <option value="20">Zanahoria</option>
+                       </select>
+                    </ul> 
+                </div>  
+                <div class="cajaverfru">
+                        <h3 class="verfru">Frutas</h3>
+                        <ul> 
+                            <li>  
+                                <select name="frutas">
+                                <option value="1">Arándanos</option> 
+                                <option value="2">Banana</option> 
+                                <option value="2">Cereza</option> 
+                                <option value="3">Ciruela</option>
+                                <option value="4">Frambuesa</option> 
+                                <option value="5">Frutilla</option> 
+                                <option value="6">Limón</option> 
+                                <option value="7">Mandarina</option> 
+                                <option value="8">Manzana</option> 
+                                <option value="9">Naranja</option> 
+                                <option value="10">Melón</option>
+                                <option value="11">Pera</option> 
+                                <option value="12">Uva</option> 
+                                <option value="13">Kiwi</option> 
+                                </select>
+                            </li> 
+                        </ul>
+                </div>  
+                <div class="postulate"> 
+                    <a href="./nuestrasrecetas.html">Aplicar</a>
+                </div>
+            </div>
+            <div class="listadorecetas">
+                <ul>
+                  
+                <li><a href="pastaprimavera.html"><img class="receta1" src="imagenes/receta1.png" alt="receta1"></a></li>
+                <li><a href="ensaladadeesparragos.html"><img class="receta2" src="imagenes/receta2.png" alt="receta2"></a></li>
+                <li><a href="tacosdevegetales.html"><img class="receta3" src="imagenes/receta3.png" alt="receta3"></a></li>
+                <li><img class="receta4" src="imagenes/receta4.png" alt="receta4"></li>
+                <li><img class="receta5" src="imagenes/receta5.png" alt="receta5"></li>
+                <li><img class="receta6" src="imagenes/receta6.png" alt="receta6"></li>
+                </ul> 
+            </div>
+
+           
+        
+        </main>
+    
+    <footer>
+        <p><span class="bold2">produccion@marcospaz.gov.ar </span> Tel. 0220 477-5364. Ruta 40 km50, Marcos Paz, Pcia. de Buenos Aires</p>   
+    </footer>
+
+    <script src="desplegable.js"></script>
+    <script src="filtro.js"></script>
+         </body>

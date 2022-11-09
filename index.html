@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="utf-8">    
+    <title>Huerta La Esperanza</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+    <link href="./css/estilos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    </head>
+
+    <body>
+        <header>
+          
+            <div class= "contenedor"> 
+                <a href="index.html">
+                <img id="logo" src="imagenes/logo.png" alt="logo">
+                </a>
+
+                 
+            <nav id="menu">
+                <button id="llamamenu" title="abre/cierra menu"><i class="material-icons">menu</i></button>
+            
+                  <ul>
+                    <li id="palabramenu">MENÚ</li>
+                           <li>
+                     <li><a href="index.html" title="pag1">Página Principal</a></li>
+                        <li><a href="nuestrasrecetas.html" title="pag2">Nuestras Recetas</a></li>
+                        <li><a href="bolsondelmes.html" title="pag3">Bolsón del Mes</a></li>
+                        <li><a href="sobrenosotrxs.html" title="pag4">Sobre Nosotrxs</a></li>
+                        <li><a href="contactanos.html" title="pag5">Contactanos</a></li>   
+                </ul> 
+
+            </nav>
+               </div>
+    </header> 
+
+        <main>
+         <div class="contenedorslider">
+                    <ul class="slider">
+                        <li id="slide1">
+                           <picture>
+                         <source srcset="imagenes/slide1_escritorio.png" media="(min-width:75em) and (orientation: landscape)" >
+                        <source srcset="imagenes/slide1_tableta.png" media="(min-width: 44em)"> 
+                         <source srcset="imagenes/slide1_tabletv.png" media="(min-width: 35em) and (orientation: portrait)"> 
+                        <img srcset="imagenes/slide1_mobile.png" alt= receta>
+                          </picture>
+                
+                          <a class="botonindex" href="recetadelmes.html" >Receta del mes: <br> <span>Souffle de zapallitos</span> 
+                          </a>
+                              
+                        </li>
+            <li id="slide2">
+                            <picture>
+                <source srcset="imagenes/slide2_escritorio.png" media="(min-width: 75em) and (orientation:landscape)">
+                <source srcset="imagenes/slide2_tableta.png" media="(min-width: 44em)">      
+                <source srcset="imagenes/slide2_tabletv.png" media="(min-width: 35em) and (orientation: portrait)" >   
+                <img srcset="imagenes/slide2_mobile.png" alt= bolsón>
+                </picture>
+               
+                <a class="botonindex" href="bolsondelmes.html">Bolsón del mes: <br> <span>Edición noviembre</span> 
+                    </a>
+                     <div id="postulate"> 
+                        <a href="formulario.html">¡Postulate!</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="menu">
+                        <li>
+                            <a href="#slide1"></a>
+                        </li>
+                        <li>
+                            <a href="#slide2"></a>
+                        </li>
+                    </ul>
+            </div>
+        </main>
+                
+
+      <script src="desplegable.js"></script>
+    </body>
